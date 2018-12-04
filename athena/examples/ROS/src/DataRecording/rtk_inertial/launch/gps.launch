@@ -1,0 +1,4 @@
+<launch>
+	<node name="gps_node" pkg="rtk_inertial" type="rtk_inertial_node" output="screen" />
+
+</launch>

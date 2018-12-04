@@ -1,0 +1,20 @@
+#ORIGIN point
+#wuhan
+origin_lat=30.45814058804
+origin_lon=114.31801222674
+
+#server cfg
+local=1
+port=5561
+server_ip=47.100.197.133
+server_port=8080
+
+#dsrc cfg
+url=udpm://239.255.76.21:7621?ttl=3
+dsrc_ip=192.168.1.224
+dsrc_port=11301
+is_sim=1
+
+//是否打开绘图工具
+draw_map_swith = 1
+

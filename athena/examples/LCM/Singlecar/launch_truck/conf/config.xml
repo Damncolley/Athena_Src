@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config version="1">
+    <local_rsu name="rsu_1" />
+    <local_obu name="鄂A 60U5Z" />
+    <local_rsd name="rsd_1" />
+    <local_oct name="oct" />
+    <csu name="csu" ip="192.168.1.101" port="7601" lcm_url="udpm://239.255.76.22:7622?ttl=3"/>
+    <rsu_list>
+        <rsu name="rsu_1" ip="192.168.1.101" port="7611" lcm_url="udpm://239.255.76.22:7622?ttl=3"/>
+    </rsu_list>
+    <rsd_list>
+        <rsd name="rsd_1" ip="192.168.3.200" port="7631" lcm_url="udpm://239.255.76.31:7631?ttl=3"/>
+        <rsd name="rsd_2" ip="192.168.3.100" port="7632" lcm_url="udpm://239.255.76.32:7632?ttl=3"/>
+    </rsd_list>
+    <obu_list>
+        <obu name="鄂A 60U5Z" ip="192.168.21.180" port="7621" lcm_url="udpm://239.255.76.21:7621?ttl=3"/>
+        <obu name="鄂A 63IEC" ip="192.168.22.180" port="7622" lcm_url="udpm://239.255.76.22:7622?ttl=3"/>
+        <obu name="鄂A 629CC" ip="192.168.23.180" port="7623" lcm_url="udpm://239.255.76.23:7623?ttl=3"/>
+	<obu name="鄂A DF004" ip="192.168.24.180" port="7624" lcm_url="udpm://239.255.76.24:7624?ttl=3"/>
+	<obu name="鄂A DF005" ip="192.168.25.180" port="7625" lcm_url="udpm://239.255.76.25:7625?ttl=3"/>
+    </obu_list>
+    <oct_list>
+    	<oct name="oct" ip="192.168.3.200" port="7641" lcm_url="udpm://239.255.76.41:7641?ttl=3"/>
+        <oct name="simple_oct" ip="192.168.3.200" port="7642" lcm_url="udpm://239.255.76.42:7642?ttl=3"/>
+    </oct_list>
+    <sim name="sim" ip="192.168.43.138" port="7651" lcm_url="udpm://239.255.76.91:7691?ttl=3"/>
+</config>

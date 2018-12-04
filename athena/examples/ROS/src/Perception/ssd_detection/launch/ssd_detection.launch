@@ -1,0 +1,7 @@
+<launch>
+	<node name="ssd_detection_node" pkg="ros_ssd_detection" type="ros_ssd_detection_node" output="screen">
+		<param name="detection_config_file" type="string" value="/home/oem/catkin_ws/src/ros_ssd_detection/config/rosCamera_config.ini"/>
+	</node>
+
+
+</launch>

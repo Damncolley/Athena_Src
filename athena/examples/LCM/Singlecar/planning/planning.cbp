@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="planning" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/planning" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++14" />
+					<Add option="-g" />
+					<Add directory="../../../../core/x86/Planning/include" />
+					<Add directory="msg" />
+					<Add directory="../planning" />
+				</Compiler>
+				<Linker>
+					<Add library="lcm" />
+					<Add library="pthread" />
+					<Add library="/usr/local/lib/libplanning.so" />
+					<Add directory="../../../../core/x86/Planning/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/planning" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="arm-elf-gcc" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-std=c++14" />
+					<Add option="-shared -fPIC" />
+					<Add directory="../planning" />
+					<Add directory="msg" />
+					<Add directory="../../../../core/arm/Planning/include" />
+					<Add directory="/usr/cross-compile-3rd/base/3rd_depend" />
+					<Add directory="/usr/cross-compile-3rd/base/3rd_depend/boost" />
+					<Add directory="/usr/cross-compile-3rd/base/3rd_depend/lcm" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-fopenmp" />
+					<Add option="-Wl,-rpath=/usr/cross-compile-3rd/base/3rd_depend/lib" />
+					<Add library="lcm" />
+					<Add library="pthread" />
+					<Add library="/usr/local/lib/libplanning.so" />
+					<Add directory="../../../../core/arm/Planning/lib" />
+					<Add directory="/usr/cross-compile-3rd/base/3rd_depend/lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="../../include/collision_check/collision_check.h" />
+		<Unit filename="../../include/common/LocalGeographicCS.hpp" />
+		<Unit filename="../../include/common/car_state.h" />
+		<Unit filename="../../include/common/color_util.h" />
+		<Unit filename="../../include/common/convert_coordinates.hpp" />
+		<Unit filename="../../include/common/cs.h" />
+		<Unit filename="../../include/common/enum_list.h" />
+		<Unit filename="../../include/common/math_util.h" />
+		<Unit filename="../../include/common/navi_point.h" />
+		<Unit filename="../../include/common/path.h" />
+		<Unit filename="../../include/common/path_tools.h" />
+		<Unit filename="../../include/common/point.h" />
+		<Unit filename="../../include/common/rect.h" />
+		<Unit filename="../../include/map_matching/map_matching.h" />
+		<Unit filename="../../include/park/park.h" />
+		<Unit filename="../../include/planning/planning.h" />
+		<Unit filename="../../include/planning/planning_output.h" />
+		<Unit filename="../../include/planning/route_data.h" />
+		<Unit filename="../../include/spline/math_tools.h" />
+		<Unit filename="../../include/spline/quartic_spline.h" />
+		<Unit filename="../../include/spline/quintic_spline.h" />
+		<Unit filename="../../include/spline/spline.h" />
+		<Unit filename="../../include/trajectory/trajectory.h" />
+		<Unit filename="../../include/trajectory/trajectory_sets.h" />
+		<Unit filename="../../include/vehicle_dynamic/cau_heading_steering.h" />
+		<Unit filename="../../include/vehicle_dynamic/circle.h" />
+		<Unit filename="../../include/vehicle_dynamic/heading.h" />
+		<Unit filename="../../include/vehicle_dynamic/nearest_point_on_spline.h" />
+		<Unit filename="../../include/vehicle_dynamic/steering_angle.h" />
+		<Unit filename="config.cpp" />
+		<Unit filename="config.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="msg/nad_lcm/line_xys.hpp" />
+		<Unit filename="msg/nad_lcm/mo_change_lane_request.hpp" />
+		<Unit filename="msg/nad_lcm/mo_info_report.hpp" />
+		<Unit filename="msg/nad_lcm/mo_obstacle_report.hpp" />
+		<Unit filename="msg/nad_lcm/obstacle_info.hpp" />
+		<Unit filename="msg/nad_lcm/obu_command.hpp" />
+		<Unit filename="msg/nad_lcm/om_change_lane_respond.hpp" />
+		<Unit filename="msg/nad_lcm/om_info_report.hpp" />
+		<Unit filename="msg/nad_lcm/om_route_respond.hpp" />
+		<Unit filename="msg/nad_lcm/om_stop_request.hpp" />
+		<Unit filename="msg/nad_lcm/om_traffic_lights_report.hpp" />
+		<Unit filename="msg/nad_lcm/ou_start_auto_respond.hpp" />
+		<Unit filename="msg/nad_lcm/ou_stop_auto_respond.hpp" />
+		<Unit filename="msg/nad_lcm/point_m.hpp" />
+		<Unit filename="msg/nad_lcm/point_xys.hpp" />
+		<Unit filename="msg/nad_lcm/route_planning_m.hpp" />
+		<Unit filename="msg/nad_lcm/section_m.hpp" />
+		<Unit filename="msg/nad_lcm/sensor_obstacle_report.hpp" />
+		<Unit filename="msg/obu_lcm/CAN_status.hpp" />
+		<Unit filename="msg/obu_lcm/CAN_value.hpp" />
+		<Unit filename="msg/obu_lcm/back_coordinate_XYH.hpp" />
+		<Unit filename="msg/obu_lcm/chassis_detail.hpp" />
+		<Unit filename="msg/obu_lcm/ins_info.hpp" />
+		<Unit filename="msg/obu_lcm/lateral_control_vui_info.hpp" />
+		<Unit filename="msg/obu_lcm/longitudinal_control_info.hpp" />
+		<Unit filename="msg/obu_lcm/mt_info_report.hpp" />
+		<Unit filename="msg/obu_lcm/nav_points.hpp" />
+		<Unit filename="msg/obu_lcm/vehicle_info.hpp" />
+		<Unit filename="planning_lcm_msg.h" />
+		<Unit filename="planning_node.cpp" />
+		<Unit filename="planning_node.h" />
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<lib_finder disable_auto="1" />
+			<debugger />
+			<DoxyBlocks>
+				<comment_style block="0" line="2" />
+				<doxyfile_project />
+				<doxyfile_build extract_all="1" extract_private="1" extract_static="1" />
+				<doxyfile_warnings />
+				<doxyfile_output />
+				<doxyfile_dot />
+				<general />
+			</DoxyBlocks>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

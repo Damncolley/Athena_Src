@@ -1,0 +1,9 @@
+<launch>
+	<arg name="pixel_size" default="2.0"/>
+	<arg name="lane_color" default="green"/>
+
+	<node name="ssd_lane_display_node" pkg="lane_ssd_display" type="lane_ssd_display_node" output="screen">
+		<!-- <param name="pixel_size" type="double" value="$(arg pixel_size)"/> -->
+		
+	</node>
+</launch>

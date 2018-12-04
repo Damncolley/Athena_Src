@@ -1,0 +1,11 @@
+<launch>
+	<node name="cv_image_node" pkg="cv_image" type="cv_image_node" >
+		<param name="video_device" type="int" value="0" />
+    		<param name="image_width"  type="int" value="1080" />
+    		<param name="image_height" type="int" value="720" />
+		<param name="frame_id"     type="string" value="titan_camera" />
+	</node>
+
+	<include file="$(find lcm2ros)/launch/gps.launch" />
+	<include file="$(find titan)/launch/lidar.launch" />
+</launch>

@@ -1,0 +1,11 @@
+<launch>
+	<arg name="config_file" default="/home/oem/catkin_ws/src/lane_detect/config/line_config.ini"/>
+	<arg name="frame_id" default="usb_cam"/>
+
+	<node name="lane_detect_node" pkg="lane_detect" type="lane_detect_node" output="screen">
+		<param name="config_file" type="string" value="$(arg config_file)"/>
+		<param name="frame_id" type="string" value="$(arg frame_id)"/>
+	</node>
+
+
+</launch>

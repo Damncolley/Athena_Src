@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<db version="1.0">
+    <scene_type_table>
+        <scene_type scene_type="car" scene_desc="大车场景" avg_speed="30" avg_lane_width="350" />
+    </scene_type_table>
+    <csu_type_table>
+        <csu_type csu_type="car" csu_desc="大车CSU" />
+    </csu_type_table>
+    <rsu_type_table>
+        <rsu_type rsu_type="car" rsu_desc="大车RSU" />
+    </rsu_type_table>
+    <obu_type_table>
+        <obu_type obu_type="长安CS55" obu_desc="长安CS55" />
+    </obu_type_table>
+    <oct_type_table>
+        <oct_type oct_type="pad" oct_desc="平板oct" />
+        <oct_type oct_type="phone" oct_desc="手机oct" />
+    </oct_type_table>
+    <rsd_type_table>
+        <rsd_type rsd_type="car" rsd_desc="公路路测采集器" />
+    </rsd_type_table>
+    <light_type_table>
+        <light_type light_type="electronic" light_desc="电子三色无方向红绿灯" />
+    </light_type_table>
+    <limspeed_type_table>
+        <limspeed_type limspeed_type="electronic" limspeed_desc="电子道路级限速牌" />
+    </limspeed_type_table>
+    <block_type_table>
+        <block_type block_type="electronic" block_desc="电子多车道施工标志" />
+        <block_type block_type="manual" block_desc="实物单车道施工标志" />
+    </block_type_table>
+    <ts_3rd_type_table>
+        <ts_3rd_type ts_3rd_type="demo" ts_3rd_desc="测试第三方交通系统" />
+    </ts_3rd_type_table>
+    <crossing_type_table>
+        <crossing_type crossing_type="crossing" crossing_desc="普通十字路口" />
+        <crossing_type crossing_type="oneway" crossing_desc="普通单向断路路口" />
+        <crossing_type crossing_type="tjunction" crossing_desc="普通丁字路口" />
+        <crossing_type crossing_type="sidewalk" crossing_desc="人行道路口" />
+    </crossing_type_table>
+</db>

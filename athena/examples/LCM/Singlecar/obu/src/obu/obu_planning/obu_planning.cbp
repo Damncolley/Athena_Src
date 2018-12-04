@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="obu_planning" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/obu_planning" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-g" />
+					<Add option="-D_NAD_OBU_" />
+					<Add option="-D_NAD_OBU_PLANNING_" />
+					<Add directory="../../fam" />
+					<Add directory="../../fam/msg" />
+					<Add directory="/usr/lib/x86_64-linux-gnu/glib-2.0/include" />
+					<Add directory="/usr/include/glib-2.0" />
+					<Add directory="../../../../../../../core/x86/Map/include" />
+					<Add directory="../../../../../../../core/x86/Navi/include" />
+					<Add directory="../../../../../../../core/x86/Common/include/base" />
+					<Add directory="../../../../../../../core/x86/Common/include/route" />
+					<Add directory="../../../../../../../core/x86/Common/include/distributed_runtime" />
+					<Add directory="../../../../../../../core/x86/Common/include/oam" />
+				</Compiler>
+				<Linker>
+					<Add library="lcm" />
+					<Add library="rt" />
+					<Add library="pthread" />
+					<Add library="glog" />
+					<Add library="boost_system" />
+					<Add library="boost_filesystem" />
+					<Add library="zmq" />
+					<Add library="GL" />
+					<Add library="GLU" />
+					<Add library="glut" />
+					<Add library="glib-2.0" />
+					<Add library="/usr/local/lib/libcommon.so" />
+					<Add library="/usr/local/lib/libroad_map.so" />
+					<Add library="/usr/local/lib/libroute.so" />
+					<Add directory="/usr/cross-compile-3rd/base/3rd_depend/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/obu_planning" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-std=c++11" />
+					<Add option="-g" />
+					<Add option="-D_NAD_OBU_PLANNING_" />
+					<Add option="-D_NAD_OBU_" />
+					<Add directory="../../fam" />
+					<Add directory="../../fam/msg" />
+					<Add directory="/usr/include/glib-2.0" />
+					<Add directory="/usr/lib/x86_64-linux-gnu/glib-2.0/include" />
+					<Add directory="../../../../../../../core/x86/Map/include" />
+					<Add directory="../../../../../../../core/x86/Navi/include" />
+					<Add directory="../../../../../../../core/x86/Common/include/base" />
+					<Add directory="../../../../../../../core/x86/Common/include/route" />
+					<Add directory="../../../../../../../core/x86/Common/include/distributed_runtime" />
+					<Add directory="../../../../../../../core/x86/Common/include/oam" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="lcm" />
+					<Add library="rt" />
+					<Add library="pthread" />
+					<Add library="glog" />
+					<Add library="boost_system" />
+					<Add library="boost_filesystem" />
+					<Add library="zmq" />
+					<Add library="GL" />
+					<Add library="GLU" />
+					<Add library="glut" />
+					<Add library="glib-2.0" />
+					<Add library="/usr/local/lib/libcommon.so" />
+					<Add library="/usr/local/lib/libroad_map.so" />
+					<Add library="/usr/local/lib/libroute.so" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="../../fam/msg/lcm/dbg.h" />
+		<Unit filename="../../fam/msg/lcm/eventlog.h" />
+		<Unit filename="../../fam/msg/lcm/lcm-cpp-impl.hpp" />
+		<Unit filename="../../fam/msg/lcm/lcm-cpp.hpp" />
+		<Unit filename="../../fam/msg/lcm/lcm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../fam/msg/lcm/lcm.h" />
+		<Unit filename="../../fam/msg/lcm/lcm_coretypes.h" />
+		<Unit filename="../../fam/msg/lcm/lcm_internal.h" />
+		<Unit filename="../../fam/msg/lcm/ringbuffer.h" />
+		<Unit filename="../../fam/msg/lcm/udpm_util.h" />
+		<Unit filename="../../fam/msg/nad_lcm/block_info.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/center_line.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/center_point.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/co_obu_info.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/co_rsu_name_respond.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/cr_add_ets_request.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/cr_add_platoon_request.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/cr_delete_ets_request.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/cr_delete_platoon_request.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/cr_exec_task_func_request.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/cr_info_report.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/cr_obu_login_respond.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/cr_obu_logout_notify.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/cr_route_respond.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/cr_rsu_login_respond.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/cr_rsu_logout_notify.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/cr_set_ets_request.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/cr_set_platoon_request.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/cr_start_auto_respond.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/cu_add_ets_respond.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/cu_add_platoon_respond.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/cu_alarm_report.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/cu_call_car_respond.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/cu_call_park_car_respond.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/cu_call_park_info_report.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/cu_config_respond.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/cu_delete_ets_respond.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/cu_delete_platoon_notify.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/cu_exec_task_respond.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/cu_info_report.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/cu_log_report.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/cu_oct_login_respond.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/cu_set_ets_respond.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/cu_set_platoon_respond.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/cu_stop_auto_notify.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/cu_stop_task_respond.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/dr_info_report.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/key_point.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/key_point_info.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/lane_of_route.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/light_info.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/limspeed_info.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/line_xys.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/lite_center_point.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/map_point.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/mo_change_lane_request.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/mo_degrade_request.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/mo_info_report.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/mo_obstacle_report.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/ne_info.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/obstacle_info.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/obu_command.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/obu_config.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/obu_info.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/oc_rsu_name_request.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/oc_vui_report.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/om_center_line_report.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/om_change_lane_respond.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/om_info_report.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/om_route_respond.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/or_change_lane_request.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/or_degrade_request.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/or_info_report.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/or_obu_login_request.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/or_qos_respond.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/or_route_request.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/or_start_auto_request.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/or_stop_auto_notify.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/or_upcall_request.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/os_sensor_on_off.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/ou_add_platoon_notify.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/ou_alarm_report.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/ou_delete_platoon_notify.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/ou_log_report.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/ou_route_respond.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/ou_set_platoon_notify.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/ou_start_auto_respond.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/ou_stop_auto_respond.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/ou_vui_report.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/platoon_info.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/point_m.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/point_xys.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/qos_info.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/rc_add_ets_respond.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/rc_add_platoon_respond.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/rc_alarm_report.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/rc_delete_ets_respond.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/rc_delete_platoon_notify.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/rc_exec_task_func_respond.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/rc_info_report.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/rc_log_report.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/rc_obu_login_request.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/rc_obu_logout_notify.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/rc_route_request.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/rc_route_respond.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/rc_rsu_login_request.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/rc_set_ets_respond.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/rc_set_platoon_respond.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/rc_start_auto_request.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/rc_stop_auto_notify.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/rc_upcall_request.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/ro_add_platoon_notify.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/ro_alarm_report.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/ro_change_lane_respond.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/ro_delete_platoon_notify.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/ro_info_report.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/ro_log_report.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/ro_obu_login_respond.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/ro_obu_logout_notify.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/ro_qos_request.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/ro_route_respond.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/ro_sensor_on_off.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/ro_set_platoon_notify.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/ro_start_auto_respond.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/ro_stop_auto_respond.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/ro_vui_report.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/route_line_point.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/route_planning.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/route_planning_m.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/rsd_config.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/rsd_info.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/rsd_sensor_info.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/rsu_config.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/rsu_info.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/section_m.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/sensor_obstacle_report.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/task_config.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/task_info.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/uc_add_ets_request.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/uc_add_platoon_request.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/uc_call_car_request.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/uc_call_park_car_request.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/uc_config_request.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/uc_delete_ets_request.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/uc_delete_platoon_request.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/uc_exec_task_request.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/uc_info_report.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/uc_oct_login_request.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/uc_set_ets_request.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/uc_set_platoon_request.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/uc_stop_task_request.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/uo_route_request.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/uo_start_auto_request.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/uo_stop_auto_request.hpp" />
+		<Unit filename="../../fam/msg/nad_lcm/uo_upcall_request.hpp" />
+		<Unit filename="../../fam/msg/nad_msg.cpp" />
+		<Unit filename="../../fam/msg/nad_msg.h" />
+		<Unit filename="../../fam/msg/ne_msg/header_t.hpp" />
+		<Unit filename="../../fam/msg/ne_msg/ne_lcm.hpp" />
+		<Unit filename="../../fam/msg/ne_msg/ne_msg_base_t.hpp" />
+		<Unit filename="../../fam/msg/ne_msg/ne_msg_t.hpp" />
+		<Unit filename="../../fam/msg/obu_lcm/CAN_status.hpp" />
+		<Unit filename="../../fam/msg/obu_lcm/CAN_value.hpp" />
+		<Unit filename="../../fam/msg/obu_lcm/accelerate_control_info.hpp" />
+		<Unit filename="../../fam/msg/obu_lcm/accelerate_feedback_info.hpp" />
+		<Unit filename="../../fam/msg/obu_lcm/back_coordinate_XYH.hpp" />
+		<Unit filename="../../fam/msg/obu_lcm/bcm_control_info.hpp" />
+		<Unit filename="../../fam/msg/obu_lcm/brake_control_info.hpp" />
+		<Unit filename="../../fam/msg/obu_lcm/brake_feedback_info.hpp" />
+		<Unit filename="../../fam/msg/obu_lcm/control_info_report.hpp" />
+		<Unit filename="../../fam/msg/obu_lcm/esr_data_list.hpp" />
+		<Unit filename="../../fam/msg/obu_lcm/esr_data_t.hpp" />
+		<Unit filename="../../fam/msg/obu_lcm/ins_info.hpp" />
+		<Unit filename="../../fam/msg/obu_lcm/lateral_control_info.hpp" />
+		<Unit filename="../../fam/msg/obu_lcm/lateral_control_vui_info.hpp" />
+		<Unit filename="../../fam/msg/obu_lcm/longitudinal_control_info.hpp" />
+		<Unit filename="../../fam/msg/obu_lcm/map_line.hpp" />
+		<Unit filename="../../fam/msg/obu_lcm/map_points.hpp" />
+		<Unit filename="../../fam/msg/obu_lcm/mt_bcm_control_info.hpp" />
+		<Unit filename="../../fam/msg/obu_lcm/mt_info_report.hpp" />
+		<Unit filename="../../fam/msg/obu_lcm/nav_points.hpp" />
+		<Unit filename="../../fam/msg/obu_lcm/obstacle_list.hpp" />
+		<Unit filename="../../fam/msg/obu_lcm/obstacle_t.hpp" />
+		<Unit filename="../../fam/msg/obu_lcm/obu_map_info.hpp" />
+		<Unit filename="../../fam/msg/obu_lcm/patch_grid.hpp" />
+		<Unit filename="../../fam/msg/obu_lcm/patch_t.hpp" />
+		<Unit filename="../../fam/msg/obu_lcm/point_t.hpp" />
+		<Unit filename="../../fam/msg/obu_lcm/rect_t.hpp" />
+		<Unit filename="../../fam/msg/obu_lcm/rsds_data_list.hpp" />
+		<Unit filename="../../fam/msg/obu_lcm/rsds_data_t.hpp" />
+		<Unit filename="../../fam/msg/obu_lcm/steering_control_info.hpp" />
+		<Unit filename="../../fam/msg/obu_lcm/steering_feedback_info.hpp" />
+		<Unit filename="../../fam/msg/obu_lcm/tm_info_report.hpp" />
+		<Unit filename="../../fam/msg/zmq/zhelpers.hpp" />
+		<Unit filename="../../fam/msg/zmq/zmq.hpp" />
+		<Unit filename="../../fam/msg/zmq/zmq_t.cpp" />
+		<Unit filename="../../fam/msg/zmq/zmq_t.h" />
+		<Unit filename="../../fam/oam/alarm/nad_ui_alarm.cpp" />
+		<Unit filename="../../fam/oam/alarm/nad_ui_alarm.h" />
+		<Unit filename="../../fam/oam/alarm/nad_warning.cpp" />
+		<Unit filename="../../fam/oam/alarm/nad_warning.h" />
+		<Unit filename="../../fam/oam/log/nad_ui_log.cpp" />
+		<Unit filename="../../fam/oam/log/nad_ui_log.h" />
+		<Unit filename="../../fam/oam/nad_oam.h" />
+		<Unit filename="draw_obu_planning.cpp" />
+		<Unit filename="draw_obu_planning.h" />
+		<Unit filename="obu_planning.cpp" />
+		<Unit filename="obu_planning.h" />
+		<Unit filename="obu_session_obu.cpp" />
+		<Unit filename="obu_session_obu.h" />
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<lib_finder disable_auto="1" />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

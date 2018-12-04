@@ -1,0 +1,139 @@
+# depslib dependency file v1.0
+1531813216 source:/home/pin/motion_planning/motion_new/motion_planning/trajectorys_generate/src/math_tools.cpp
+	<iostream>
+	"math_tools.h"
+
+1531813216 /home/pin/motion_planning/motion_new/motion_planning/trajectorys_generate/include/math_tools.h
+	<math.h>
+	"navi_point.h"
+
+1531812646 /home/pin/motion_planning/motion_new/motion_planning/trajectorys_generate/include/navi_point.h
+
+1531812907 source:/home/pin/motion_planning/motion_new/motion_planning/trajectorys_generate/src/navi_point.cpp
+	<fstream>
+	<iostream>
+	<math.h>
+	<string>
+	"navi_point.h"
+
+1531920207 source:/home/pin/motion_planning/motion_new/motion_planning/demo_test/quartic_spline_generate/main.cpp
+	<iostream>
+	<vector>
+	"quartic_spline.h"
+	"navi_point.h"
+
+1531815817 /home/pin/motion_planning/motion_new/motion_planning/trajectorys_generate/include/quartic_spline.h
+	<vector>
+	"navi_point.h"
+
+1531815815 source:/home/pin/motion_planning/motion_new/motion_planning/trajectorys_generate/src/quartic_spline.cpp
+	<iostream>
+	"quartic_spline.h"
+	"math_tools.h"
+	<math.h>
+	<cassert>
+
+1531812907 source:/home/pin/motion_planning/motion_new/motion_planning/common/src/navi_point.cpp
+	<fstream>
+	<iostream>
+	<math.h>
+	<string>
+	"navi_point.h"
+
+1531812646 /home/pin/motion_planning/motion_new/motion_planning/common/include/navi_point.h
+
+1531812907 source:/home/pin/motion_planning/motion_new/motion_planning_src/common/src/navi_point.cpp
+	<fstream>
+	<iostream>
+	<math.h>
+	<string>
+	"navi_point.h"
+
+1531812646 /home/pin/motion_planning/motion_new/motion_planning_src/common/include/navi_point.h
+
+1531813216 source:/home/pin/motion_planning/motion_new/motion_planning_src/trajectorys_generate/src/math_tools.cpp
+	<iostream>
+	"math_tools.h"
+
+1531813216 /home/pin/motion_planning/motion_new/motion_planning_src/trajectorys_generate/include/math_tools.h
+	<math.h>
+	"navi_point.h"
+
+1531815815 source:/home/pin/motion_planning/motion_new/motion_planning_src/trajectorys_generate/src/quartic_spline.cpp
+	<iostream>
+	"quartic_spline.h"
+	"math_tools.h"
+	<math.h>
+	<cassert>
+
+1531815817 /home/pin/motion_planning/motion_new/motion_planning_src/trajectorys_generate/include/quartic_spline.h
+	<vector>
+	"navi_point.h"
+
+1531963270 source:/home/pin/motion_planning/motion_new/motion_planning_src/demo_test/quartic_spline_generate/main.cpp
+	<iostream>
+	<fstream>
+	<vector>
+	"quartic_spline.h"
+	"navi_point.h"
+
+1532071108 source:/home/pin/motion_planning/motion_planning_src/demo_test/quartic_spline_generate/main.cpp
+	<iostream>
+	<fstream>
+	<vector>
+	"../../include/spline/quartic_spline.h"
+
+1532070973 /home/pin/motion_planning/motion_planning_src/include/spline/quartic_spline.h
+	<vector>
+	"../common/navi_point.h"
+
+1531812646 /home/pin/motion_planning/motion_planning_src/include/common/navi_point.h
+
+1532071498 source:/home/pin/motion_planning/planning_src/src/common/navi_point.cpp
+	<fstream>
+	<iostream>
+	<math.h>
+	<string>
+	"common/navi_point.h"
+
+1532168926 /home/pin/motion_planning/planning_src/include/common/navi_point.h
+	<stdint.h>
+
+1532071470 source:/home/pin/motion_planning/planning_src/src/spline/math_tools.cpp
+	<iostream>
+	"spline/math_tools.h"
+
+1532169823 /home/pin/motion_planning/planning_src/include/spline/math_tools.h
+	<math.h>
+	"common/navi_point.h"
+
+1532071498 source:/home/pin/motion_planning/planning_src/src/spline/quartic_spline.cpp
+	<iostream>
+	"spline/quartic_spline.h"
+	"spline/math_tools.h"
+	<math.h>
+	<cassert>
+
+1532170298 /home/pin/motion_planning/planning_src/include/spline/quartic_spline.h
+	<vector>
+	"common/navi_point.h"
+
+1532169804 source:/home/pin/motion_planning/planning_src/demo_test/quartic_spline_generate/main.cpp
+	<iostream>
+	<fstream>
+	<vector>
+	"spline/quartic_spline.h"
+
+1541660000 source:/home/pin/git/athena_lib_master/athena/cc/planning/quartic_spline_generate/main.cpp
+	<iostream>
+	<fstream>
+	<vector>
+	"spline/quartic_spline.h"
+
+1541660001 /home/pin/git/athena_lib_master/athena/core/x86/Planning/include/spline/quartic_spline.h
+	<vector>
+	"common/navi_point.h"
+
+1541660001 /home/pin/git/athena_lib_master/athena/core/x86/Planning/include/common/navi_point.h
+	<stdint.h>
+

@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1531812907 source:/home/pin/motion_planning/motion_new/motion_planning/common/src/navi_point.cpp
+	<fstream>
+	<iostream>
+	<math.h>
+	<string>
+	"navi_point.h"
+
+1531812646 /home/pin/motion_planning/motion_new/motion_planning/common/include/navi_point.h
+

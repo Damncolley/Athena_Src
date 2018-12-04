@@ -1,0 +1,80 @@
+<launch>
+  <arg name="model" default="RS16" />
+  <!--<arg name="device_ip" default="192.168.5.201" />-->
+  <!--<arg name="msop_port" default="6699" />-->
+  <!--<arg name="difop_port" default="7788" />-->
+  <!--<arg name="lidar_param_path" default="$(find rslidar_pointcloud)/data/rs_lidar_16/"/>-->
+  <!--<arg name="points_name" default="/lidar3/points_raw"/>-->
+  <!--<arg name="frame_id" default="rslidar" />-->
+
+
+
+<group ns="ns_front">
+  <node  name="rslidar_node_front" pkg="rslidar_driver" type="rslidar_node" output="screen" >
+    <param name="model" value="$(arg model)"/>
+    <param name="device_ip" value="192.168.3.200" />
+    <param name="msop_port" value="2255" />
+    <param name="difop_port" value="3344"/>
+    <param name="frame_id" value="suteng_front"/>
+    <!--param name="pcap" value="path_to_pcap"/-->
+  </node>
+
+  <node  name="cloud_node_front" pkg="rslidar_pointcloud" type="cloud_node" output="screen" >
+    <param name="model" value="$(arg model)"/>
+    <param name="curves_path" value="$(find rslidar_pointcloud)/data/rs_lidar_16/curves.csv" />
+    <param name="angle_path" value="$(find rslidar_pointcloud)/data/rs_lidar_16/angle.csv" />
+    <param name="channel_path" value="$(find rslidar_pointcloud)/data/rs_lidar_16/ChannelNum.csv" />
+    
+    <remap from="rslidar_points" to="/lidar1/points_raw"/>
+  </node>
+</group>
+
+
+<group ns="ns_right">
+  <node  name="rslidar_node_right" pkg="rslidar_driver" type="rslidar_node" output="screen" >
+    <param name="model" value="$(arg model)"/>
+    <param name="device_ip" value="192.168.3.201" />
+    <param name="msop_port" value="6699" />
+    <param name="difop_port" value="7788"/>
+    <param name="frame_id" value="suteng_right"/>
+    <!--param name="pcap" value="path_to_pcap"/-->
+  </node>
+
+  <node  name="cloud_node_right" pkg="rslidar_pointcloud" type="cloud_node" output="screen" >
+    <param name="model" value="$(arg model)"/>
+    <param name="curves_path" value="$(find rslidar_pointcloud)/data/rs_lidar_16/curves.csv" />
+    <param name="angle_path" value="$(find rslidar_pointcloud)/data/rs_lidar_16/angle.csv" />
+    <param name="channel_path" value="$(find rslidar_pointcloud)/data/rs_lidar_16/ChannelNum.csv" />
+    
+    <remap from="rslidar_points" to="/lidar3/points_raw"/>
+  </node>
+</group>
+
+
+<group ns="ns_left">
+  <node  name="rslidar_node_left" pkg="rslidar_driver" type="rslidar_node" output="screen" >
+    <param name="model" value="$(arg model)"/>
+    <param name="device_ip" value="192.168.3.202" />
+    <param name="msop_port" value="5522" />
+    <param name="difop_port" value="4433"/>
+    <param name="frame_id" value="suteng_left"/>
+    <!--param name="pcap" value="path_to_pcap"/-->
+  </node>
+
+  <node  name="cloud_node_left" pkg="rslidar_pointcloud" type="cloud_node" output="screen" >
+    <param name="model" value="$(arg model)"/>
+    <param name="curves_path" value="$(find rslidar_pointcloud)/data/rs_lidar_16/curves.csv" />
+    <param name="angle_path" value="$(find rslidar_pointcloud)/data/rs_lidar_16/angle.csv" />
+    <param name="channel_path" value="$(find rslidar_pointcloud)/data/rs_lidar_16/ChannelNum.csv" />
+    
+    <remap from="rslidar_points" to="/lidar2/points_raw"/>
+  </node>
+</group>
+
+
+
+
+
+  <!-- <node name="rviz" pkg="rviz" type="rviz"  args="-d $(find rslidar_pointcloud)/rviz_cfg/rslidar.rviz" />-->
+
+</launch>

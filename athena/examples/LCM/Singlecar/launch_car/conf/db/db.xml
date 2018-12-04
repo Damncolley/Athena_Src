@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<db version="1.0">
+    <scene_table>
+        <scene scene_name="car" scene_type="car" />
+    </scene_table>
+    <csu_table>
+        <csu csu_name="csu" csu_type="car" />
+    </csu_table>
+    <csu_user_table>
+        <csu_user csu_user="user00001" csu_password="user00001" />
+        <csu_user csu_user="user00002" csu_password="user00002" />
+        <csu_user csu_user="user00003" csu_password="user00003" />
+    </csu_user_table>
+    <rsu_table>
+        <rsu rsu_name="rsu_1" rsu_type="car" rsu_lon="116.6596081" rsu_lat="39.7392210" rsu_radius_lon="2000" rsu_radius_lat="2000" />
+    </rsu_table>
+    <obu_table>
+        <obu obu_name="鄂A 60U5Z" obu_type="长安CS55" />
+        <obu obu_name="鄂A 63IEC" obu_type="长安CS55" />
+        <obu obu_name="鄂A 629CC" obu_type="长安CS55" />
+    	<obu obu_name="鄂A DF004" obu_type="长安CS55" />
+    	<obu obu_name="鄂A DF005" obu_type="长安CS55" />
+    	<obu obu_name="鄂A DF006" obu_type="长安CS55" />
+    </obu_table>
+    <oct_table>
+        <oct oct_name="oct" oct_type="pad" />
+        <oct oct_name="simple_oct" oct_type="phone" />
+    </oct_table>
+    <rsd_table>
+	<rsd rsd_name="rsd_1" rsd_type="car" rsd_ip="192.168.0.100" />
+        <rsd rsd_name="rsd_2" rsd_type="car" rsd_ip="192.168.0.200" />
+    </rsd_table>
+    <rsd_sensor_table>
+	<rsd_sensor rsd_sensor_name="rsd_1|摄影头" type="0" lon="116.6604439" lat="39.7402134" x="0" y="0" yaw="52.0" range="120" vertical_fov="40" horizontal_fov="120" ip="192.168.3.100" lane_id="0" />
+        <rsd_sensor rsd_sensor_name="rsd_2|激光雷达" type="1" lon="116.6595074" lat="39.7467258" x="0" y="0" yaw="40.0" range="120" vertical_fov="30" horizontal_fov="120" ip="192.168.3.110" lane_id="0" />
+    </rsd_sensor_table>
+    <light_table>
+        <light light_id="114.1470488|30.4768186" light_type="electronic" light_status="1" light_ip="" active_lane_id="0" /> <!-- cross1|AX  X为A,B,C,D某一个-->
+	<light light_id="114.1469498|30.4770297" light_type="electronic" light_status="1" light_ip="" active_lane_id="1" /> <!-- cross1|BX  X为A,B,C,D某一个-->
+	<light light_id="114.1471646|30.4770074" light_type="electronic" light_status="1" light_ip="" active_lane_id="0" /> <!-- cross1|CX  X为A,B,C,D某一个-->
+	<light light_id="114.1472485|30.4768648" light_type="electronic" light_status="1" light_ip="" active_lane_id="1" /> <!-- cross1|DX  X为A,B,C,D某一个-->
+
+	<light light_id="114.1479438|30.4779034" light_type="electronic" light_status="1" light_ip="" active_lane_id="0" /> <!-- cross2|AX  X为A,B,C,D某一个-->
+	<light light_id="114.1478623|30.4782094" light_type="electronic" light_status="1" light_ip="" active_lane_id="0" /> <!-- cross2|BX  X为A,B,C,D某一个-->
+	<light light_id="114.1482647|30.4779918" light_type="electronic" light_status="1" light_ip="" active_lane_id="1" /> <!-- cross2|DX  X为A,B,C,D某一个-->
+    </light_table>
+    <limspeed_table>
+        <!-- <limspeed limspeed_id="116.6613382|39.7333453" limspeed_type="electronic" limspeed_value="30" limspeed_ip="192.168.3.130" lane_id="2018" />--><!-- 实体限速牌2 -->
+      <limspeed limspeed_id="114.14459238|30.47571485" limspeed_type="electronic" limspeed_value="30" limspeed_ip="" lane_id="2039" /><!-- 限速牌-->
+    </limspeed_table>
+    <block_table>
+       <!-- <block block_id="114.14462943464511|30.477028169224756" block_type="electronic" block_value="3" lane_count="2" block_ip="" lane_id="2104" /> -->
+    </block_table>
+    <ts_3rd_table>
+    </ts_3rd_table>
+    <crossing_table>
+        <crossing crossing_id="cross1" crossing_type="crossing" />
+        <crossing crossing_id="cross2" crossing_type="crossing" />
+    </crossing_table>
+    <conflict_table><!--AD,BA,CB,DC任何时候都可以右转，绿灯时可以直行和左转，红绿灯绑定地图中连接关系的light点  -->
+	<conflict conflict_id="cross1|AD" light_id="114.1470488|30.4768186" active_point="50397" stop_point="50396" exit_point="50394" conflict_list="NULL" />
+	<conflict conflict_id="cross1|BA" light_id="114.1469498|30.4770297" active_point="50409" stop_point="50408" exit_point="50401" conflict_list="NULL" />
+	<conflict conflict_id="cross1|CB" light_id="114.1471646|30.4770074" active_point="50400" stop_point="50399" exit_point="50406" conflict_list="NULL" />
+	<conflict conflict_id="cross1|DC" light_id="114.1472485|30.4768648" active_point="50405" stop_point="50404" exit_point="50402" conflict_list="NULL" />
+
+	<conflict conflict_id="cross1|AC" light_id="114.1470488|30.4768186" active_point="50397" stop_point="50396" exit_point="50402" conflict_list="BD|DB|DA|CD" />
+	<conflict conflict_id="cross1|BD" light_id="114.1469498|30.4770297" active_point="50409" stop_point="50408" exit_point="50394" conflict_list="AC|CA|AB|DA" />
+	<conflict conflict_id="cross1|CA" light_id="114.1471646|30.4770074" active_point="50400" stop_point="50399" exit_point="50401" conflict_list="DB|BD|BC|AB" />
+	<conflict conflict_id="cross1|DB" light_id="114.1472485|30.4768648" active_point="50405" stop_point="50404" exit_point="50406" conflict_list="CA|AC|CD|BC" />
+
+	<conflict conflict_id="cross1|AB" light_id="114.1470488|30.4768186" active_point="50397" stop_point="50396" exit_point="50406" conflict_list="DA|CA|BD|BC" />
+	<conflict conflict_id="cross1|BC" light_id="114.1469498|30.4770297" active_point="50409" stop_point="50408" exit_point="50402" conflict_list="AB|DB|CA|CD" />
+	<conflict conflict_id="cross1|CD" light_id="114.1471646|30.4770074" active_point="50400" stop_point="50399" exit_point="50394" conflict_list="BC|AC|DB|DA" />
+	<conflict conflict_id="cross1|DA" light_id="114.1472485|30.4768648" active_point="50405" stop_point="50404" exit_point="50401" conflict_list="CD|BD|AC|AB" />
+
+	<conflict conflict_id="cross2|AD" light_id="114.1479438|30.4779034" active_point="50384" stop_point="50383" exit_point="50393" conflict_list="NULL" />
+	<conflict conflict_id="cross2|BA" light_id="114.1478623|30.4782094" active_point="50392" stop_point="50391" exit_point="50385" conflict_list="NULL" />
+	<conflict conflict_id="cross2|BD" light_id="114.1478623|30.4782094" active_point="50392" stop_point="50391" exit_point="50393" conflict_list="AB|DA" />
+	<conflict conflict_id="cross2|DB" light_id="114.1482647|30.4779918" active_point="50388" stop_point="50387" exit_point="50389" conflict_list="NULL" />
+	<conflict conflict_id="cross2|AB" light_id="114.1479438|30.4779034" active_point="50384" stop_point="50383" exit_point="50389" conflict_list="DA|BD" />
+	<conflict conflict_id="cross2|DA" light_id="114.1482647|30.4779918" active_point="50388" stop_point="50387" exit_point="50385" conflict_list="BD|AB" />
+    </conflict_table>
+    <warning_table>
+    	<!--<warning warning_id="116.6527951|39.7369607|single" warning_type="single" warning_desc="西外环到内环中间点" lane_id="0" />-->
+        <!--<warning warning_id="116.6614896|39.7319005|limspeed_off" warning_type="limspeed_off" warning_desc="取消限速1" lane_id="0" />-->
+        <warning warning_id="114.1448143|30.474571|limspeed_off" warning_type="limspeed_off" warning_desc="取消限速" lane_id="2035" />
+    </warning_table>
+</db>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

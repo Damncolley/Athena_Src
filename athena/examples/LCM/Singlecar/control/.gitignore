@@ -1,0 +1,6 @@
+*.layout
+*.o
+*.log
+*.workspace
+*.depend
+*.dat

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<simulate version="1">
+    <obu_list>
+	<!-- <obu name="鄂A 60U5Z" route="key" start="4" speed="0" yaw="124.7" option="true_motion"/>  -->
+        <!-- <obu name="鄂A 60U5Z" route="key" start="1" speed="0" yaw="355.7" option="true_motion"/> -->
+	 <obu name="鄂A 60U5Z" route="key" start="1" speed="0" yaw="97.5" option="true_motion"/> 
+    </obu_list>
+    <!-- <car_list>
+        <car name="鄂A CAR02" route="key" start="4" speed="0"/>
+    </car_list> 
+     <rsd_list>
+        <rsd name="rsd_1"/>
+    </rsd_list>-->
+   <!-- <people_list>
+        <people name="man1" route="key" start="5" speed="0"/>
+       
+    </people_list>-->
+    <!--<block_list>
+        <block name="block_1" route="key" start="45"/>
+    </block_list>-->
+</simulate>

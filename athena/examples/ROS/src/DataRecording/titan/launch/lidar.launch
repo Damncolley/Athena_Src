@@ -1,0 +1,4 @@
+<launch>
+	<include file="$(find hesai_lidar)/launch/p40p_titan_right.launch"/>
+	<include file="$(find rslidar_pointcloud)/launch/rs_lidar_16 _multi.launch"/>
+</launch>

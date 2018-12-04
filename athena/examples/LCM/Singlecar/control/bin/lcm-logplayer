@@ -1,0 +1,6 @@
+回放
+lcm-logplayer -v -s 1 --lcm-url=udpm://239.255.76.22:7622?ttl=3 lka.log   
+
+
+录数据
+lcm-logger --lcm-url=udpm://239.255.76.22:7622?ttl=3 lka_20180330.log 
