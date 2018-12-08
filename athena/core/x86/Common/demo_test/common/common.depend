@@ -1,0 +1,439 @@
+# depslib dependency file v1.0
+1540279886 source:/home/zws/桌面/work_p/git/athena_内部代码/Common/source/base/Config.cpp
+	"config/Config.h"
+
+1539936492 /home/zws/桌面/work_p/git/athena_内部代码/Common/nad/base/config/Config.h
+	<string>
+	<map>
+	<iostream>
+	<fstream>
+	<sstream>
+
+1540553846 source:/home/zws/桌面/work_p/git/athena_内部代码/Common/source/base/nad_config.cpp
+	"config/nad_config.h"
+
+1540373471 /home/zws/桌面/work_p/git/athena_内部代码/Common/nad/base/config/nad_config.h
+	"nad_base.h"
+
+1540798474 /home/zws/桌面/work_p/git/athena_内部代码/Common/nad/base/nad_base.h
+	"nad_type.h"
+	"nad_retcode.h"
+	"nad_enum.h"
+	"nad_function.h"
+	"log/nad_glog.h"
+	"xml/pugixml.hpp"
+	"db/nad_db.h"
+	"timer/nad_timer.h"
+
+1540367323 /home/zws/桌面/work_p/git/athena_内部代码/Common/nad/base/nad_type.h
+	<arpa/inet.h>
+	<assert.h>
+	<ctype.h>
+	<dirent.h>
+	<dlfcn.h>
+	<errno.h>
+	<fcntl.h>
+	<glob.h>
+	<math.h>
+	<netdb.h>
+	<netinet/in.h>
+	<netinet/tcp.h>
+	<pthread.h>
+	<stdarg.h>
+	<stdarg.h>
+	<stddef.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<strings.h>
+	<sys/epoll.h>
+	<sys/ioctl.h>
+	<sys/ipc.h>
+	<sys/mman.h>
+	<sys/mount.h>
+	<sys/resource.h>
+	<sys/sem.h>
+	<sys/select.h>
+	<sys/shm.h>
+	<signal.h>
+	<sys/socket.h>
+	<sys/stat.h>
+	<sys/statfs.h>
+	<sys/syscall.h>
+	<sys/time.h>
+	<sys/types.h>
+	<sys/un.h>
+	<time.h>
+	<unistd.h>
+	<net/if.h>
+	<iostream>
+	<algorithm>
+	<deque>
+	<functional>
+	<iterator>
+	<vector>
+	<string>
+	<list>
+	<map>
+	<memory>
+	<numeric>
+	<queue>
+	<set>
+	<stack>
+	<utility>
+	<fstream>
+	<regex>
+	<boost/filesystem.hpp>
+	<boost/tokenizer.hpp>
+	<boost/lexical_cast.hpp>
+	<boost/algorithm/string.hpp>
+	<glog/logging.h>
+	<glog/raw_logging.h>
+	"nad_enum.h"
+
+1540538966 /home/zws/桌面/work_p/git/athena_内部代码/Common/nad/base/nad_enum.h
+
+1539936492 /home/zws/桌面/work_p/git/athena_内部代码/Common/nad/base/nad_retcode.h
+
+1540202332 /home/zws/桌面/work_p/git/athena_内部代码/Common/nad/base/nad_function.h
+	"nad_type.h"
+	"nad_retcode.h"
+	"nad_enum.h"
+	"LocalGeographicCS.hpp"
+	"config/Config.h"
+	"math_util.h"
+
+1539936492 /home/zws/桌面/work_p/git/athena_内部代码/Common/nad/route/LocalGeographicCS.hpp
+	"convert_coordinates.hpp"
+	<utility>
+
+1539936492 /home/zws/桌面/work_p/git/athena_内部代码/Common/nad/route/convert_coordinates.hpp
+	<cmath>
+
+1539936492 /home/zws/桌面/work_p/git/athena_内部代码/Common/nad/route/math_util.h
+	<math.h>
+	<stdlib.h>
+	<stdint.h>
+	<assert.h>
+	<iostream>
+
+1539936492 /home/zws/桌面/work_p/git/athena_内部代码/Common/nad/base/log/nad_glog.h
+
+1539936492 /home/zws/桌面/work_p/git/athena_内部代码/Common/nad/base/xml/pugixml.hpp
+	"pugiconfig.hpp"
+	<stddef.h>
+	<exception>
+	<iterator>
+	<iosfwd>
+	<string>
+
+1539936492 /home/zws/桌面/work_p/git/athena_内部代码/Common/nad/base/xml/pugiconfig.hpp
+
+1540363438 /home/zws/桌面/work_p/git/athena_内部代码/Common/nad/base/db/nad_db.h
+	"nad_base.h"
+
+1540278322 /home/zws/桌面/work_p/git/athena_内部代码/Common/nad/distributed_runtime/timer/nad_timer.h
+	"nad_base.h"
+
+1540278379 source:/home/zws/桌面/work_p/git/athena_内部代码/Common/source/base/nad_db.cpp
+	"db/nad_db.h"
+
+1540278398 source:/home/zws/桌面/work_p/git/athena_内部代码/Common/source/base/nad_function.cpp
+	"nad_function.h"
+
+1540367342 source:/home/zws/桌面/work_p/git/athena_内部代码/Common/source/base/nad_glog.cpp
+	"log/nad_glog.h"
+	"nad_type.h"
+
+1540366959 source:/home/zws/桌面/work_p/git/athena_内部代码/Common/source/base/nad_type.cpp
+	"nad_type.h"
+	"nad_enum.h"
+	"log/nad_glog.h"
+
+1540279919 source:/home/zws/桌面/work_p/git/athena_内部代码/Common/source/base/pugixml.cpp
+	"xml/pugixml.hpp"
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<assert.h>
+	<limits.h>
+	<wchar.h>
+	<math.h>
+	<float.h>
+	<setjmp.h>
+	<istream>
+	<ostream>
+	<string>
+	<new>
+	<stdint.h>
+
+1540279960 source:/home/zws/桌面/work_p/git/athena_内部代码/Common/source/msg/nad_session.cpp
+	"session/nad_session.h"
+
+1540266739 /home/zws/桌面/work_p/git/athena_内部代码/Common/nad/distributed_runtime/session/nad_session.h
+	"../timer/nad_timer.h"
+
+1540555001 source:/home/zws/桌面/work_p/git/athena_内部代码/Common/source/msg/nad_timer.cpp
+	"timer/nad_timer.h"
+
+1540280005 source:/home/zws/桌面/work_p/git/athena_内部代码/Common/source/oam/nad_task_func.cpp
+	"task/nad_task_func.h"
+
+1540278732 /home/zws/桌面/work_p/git/athena_内部代码/Common/nad/oam/task/nad_task_func.h
+	"nad_function.h"
+
+1540284506 source:/home/zws/桌面/work_p/git/athena_内部代码/Common/source/oam/nad_task_userfunc.cpp
+	"task/nad_task_userfunc.h"
+
+1540798532 /home/zws/桌面/work_p/git/athena_内部代码/Common/nad/oam/task/nad_task_userfunc.h
+	"nad_task_func.h"
+	"info/nad_info.h"
+
+1540284243 /home/zws/桌面/work_p/git/athena_内部代码/Common/nad/distributed_runtime/info/nad_info.h
+
+1539661780 source:/home/zws/桌面/work_p/git/athena_内部代码/Common/source/route/heading.cpp
+	<math.h>
+	<vector>
+	<iostream>
+	"math_util.h"
+	"heading.h"
+
+1539936492 /home/zws/桌面/work_p/git/athena_内部代码/Common/nad/route/heading.h
+	<math.h>
+	<vector>
+
+1540804534 source:/home/zws/桌面/work_p/git/athena_内部代码/Common/source/speed/nad_speed.cpp
+	"info/nad_speed.h"
+	"nad_type.h"
+	"nad_function.h"
+
+1540278488 /home/zws/桌面/work_p/git/athena_内部代码/Common/nad/distributed_runtime/info/nad_speed.h
+	"nad_type.h"
+
+1540804573 source:/home/zws/桌面/work_p/git/athena_内部代码/Common/source/starter/nad_starter.cpp
+	"starter/nad_starter.h"
+	"nad_base.h"
+
+1540433775 /home/zws/桌面/work_p/git/athena_内部代码/Common/nad/distributed_runtime/starter/nad_starter.h
+	"config/nad_config.h"
+
+1540279680 source:/home/zws/桌面/work_p/git/athena_内部代码/Common/demo_test/common/main.cpp
+
+1541758570 source:/home/zws/桌面/work_p/git/Athena_Map_Navi/Common/source/base/Config.cpp
+	"config/Config.h"
+
+1541758570 /home/zws/桌面/work_p/git/Athena_Map_Navi/Common/include/base/config/Config.h
+	<string>
+	<map>
+	<iostream>
+	<fstream>
+	<sstream>
+
+1541758570 source:/home/zws/桌面/work_p/git/Athena_Map_Navi/Common/source/base/nad_config.cpp
+	"config/nad_config.h"
+
+1541758570 /home/zws/桌面/work_p/git/Athena_Map_Navi/Common/include/base/config/nad_config.h
+	"nad_base.h"
+
+1541758570 /home/zws/桌面/work_p/git/Athena_Map_Navi/Common/include/base/nad_base.h
+	"nad_type.h"
+	"nad_retcode.h"
+	"nad_enum.h"
+	"nad_function.h"
+	"log/nad_glog.h"
+	"xml/pugixml.hpp"
+	"db/nad_db.h"
+	"timer/nad_timer.h"
+
+1541758570 /home/zws/桌面/work_p/git/Athena_Map_Navi/Common/include/base/nad_type.h
+	<arpa/inet.h>
+	<assert.h>
+	<ctype.h>
+	<dirent.h>
+	<dlfcn.h>
+	<errno.h>
+	<fcntl.h>
+	<glob.h>
+	<math.h>
+	<netdb.h>
+	<netinet/in.h>
+	<netinet/tcp.h>
+	<pthread.h>
+	<stdarg.h>
+	<stdarg.h>
+	<stddef.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<strings.h>
+	<sys/epoll.h>
+	<sys/ioctl.h>
+	<sys/ipc.h>
+	<sys/mman.h>
+	<sys/mount.h>
+	<sys/resource.h>
+	<sys/sem.h>
+	<sys/select.h>
+	<sys/shm.h>
+	<signal.h>
+	<sys/socket.h>
+	<sys/stat.h>
+	<sys/statfs.h>
+	<sys/syscall.h>
+	<sys/time.h>
+	<sys/types.h>
+	<sys/un.h>
+	<time.h>
+	<unistd.h>
+	<net/if.h>
+	<iostream>
+	<algorithm>
+	<deque>
+	<functional>
+	<iterator>
+	<vector>
+	<string>
+	<list>
+	<map>
+	<memory>
+	<numeric>
+	<queue>
+	<set>
+	<stack>
+	<utility>
+	<fstream>
+	<regex>
+	<boost/filesystem.hpp>
+	<boost/tokenizer.hpp>
+	<boost/lexical_cast.hpp>
+	<boost/algorithm/string.hpp>
+	<glog/logging.h>
+	<glog/raw_logging.h>
+	"nad_enum.h"
+
+1541758570 /home/zws/桌面/work_p/git/Athena_Map_Navi/Common/include/base/nad_enum.h
+
+1541758570 /home/zws/桌面/work_p/git/Athena_Map_Navi/Common/include/base/nad_retcode.h
+
+1541758570 /home/zws/桌面/work_p/git/Athena_Map_Navi/Common/include/base/nad_function.h
+	"nad_type.h"
+	"nad_retcode.h"
+	"nad_enum.h"
+	"LocalGeographicCS.hpp"
+	"config/Config.h"
+	"math_util.h"
+
+1541758570 /home/zws/桌面/work_p/git/Athena_Map_Navi/Common/include/route/LocalGeographicCS.hpp
+	"convert_coordinates.hpp"
+	<utility>
+
+1541758570 /home/zws/桌面/work_p/git/Athena_Map_Navi/Common/include/route/convert_coordinates.hpp
+	<cmath>
+
+1541758570 /home/zws/桌面/work_p/git/Athena_Map_Navi/Common/include/route/math_util.h
+	<math.h>
+	<stdlib.h>
+	<stdint.h>
+	<assert.h>
+	<iostream>
+
+1541758570 /home/zws/桌面/work_p/git/Athena_Map_Navi/Common/include/base/log/nad_glog.h
+
+1541758570 /home/zws/桌面/work_p/git/Athena_Map_Navi/Common/include/base/xml/pugixml.hpp
+	"pugiconfig.hpp"
+	<stddef.h>
+	<exception>
+	<iterator>
+	<iosfwd>
+	<string>
+
+1541758570 /home/zws/桌面/work_p/git/Athena_Map_Navi/Common/include/base/xml/pugiconfig.hpp
+
+1541758570 /home/zws/桌面/work_p/git/Athena_Map_Navi/Common/include/base/db/nad_db.h
+	"nad_base.h"
+
+1541758570 /home/zws/桌面/work_p/git/Athena_Map_Navi/Common/include/distributed_runtime/timer/nad_timer.h
+	"nad_base.h"
+
+1541758570 source:/home/zws/桌面/work_p/git/Athena_Map_Navi/Common/source/base/nad_db.cpp
+	"db/nad_db.h"
+
+1541758570 source:/home/zws/桌面/work_p/git/Athena_Map_Navi/Common/source/base/nad_function.cpp
+	"nad_function.h"
+
+1541758570 source:/home/zws/桌面/work_p/git/Athena_Map_Navi/Common/source/base/nad_glog.cpp
+	"log/nad_glog.h"
+	"nad_type.h"
+
+1541758570 source:/home/zws/桌面/work_p/git/Athena_Map_Navi/Common/source/base/nad_type.cpp
+	"nad_type.h"
+	"nad_enum.h"
+	"log/nad_glog.h"
+
+1541758570 source:/home/zws/桌面/work_p/git/Athena_Map_Navi/Common/source/base/pugixml.cpp
+	"xml/pugixml.hpp"
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<assert.h>
+	<limits.h>
+	<wchar.h>
+	<math.h>
+	<float.h>
+	<setjmp.h>
+	<istream>
+	<ostream>
+	<string>
+	<new>
+	<stdint.h>
+
+1541758570 source:/home/zws/桌面/work_p/git/Athena_Map_Navi/Common/source/msg/nad_session.cpp
+	"session/nad_session.h"
+
+1541758570 /home/zws/桌面/work_p/git/Athena_Map_Navi/Common/include/distributed_runtime/session/nad_session.h
+	"../timer/nad_timer.h"
+
+1541758570 source:/home/zws/桌面/work_p/git/Athena_Map_Navi/Common/source/msg/nad_timer.cpp
+	"timer/nad_timer.h"
+
+1541758570 source:/home/zws/桌面/work_p/git/Athena_Map_Navi/Common/source/oam/nad_task_func.cpp
+	"task/nad_task_func.h"
+
+1541758570 /home/zws/桌面/work_p/git/Athena_Map_Navi/Common/include/oam/task/nad_task_func.h
+	"nad_function.h"
+
+1541758570 source:/home/zws/桌面/work_p/git/Athena_Map_Navi/Common/source/oam/nad_task_userfunc.cpp
+	"task/nad_task_userfunc.h"
+
+1541758570 /home/zws/桌面/work_p/git/Athena_Map_Navi/Common/include/oam/task/nad_task_userfunc.h
+	"nad_task_func.h"
+	"info/nad_info.h"
+
+1541758570 /home/zws/桌面/work_p/git/Athena_Map_Navi/Common/include/distributed_runtime/info/nad_info.h
+
+1541758570 source:/home/zws/桌面/work_p/git/Athena_Map_Navi/Common/source/route/heading.cpp
+	<math.h>
+	<vector>
+	<iostream>
+	"math_util.h"
+	"heading.h"
+
+1541758570 /home/zws/桌面/work_p/git/Athena_Map_Navi/Common/include/route/heading.h
+	<math.h>
+	<vector>
+
+1541758570 source:/home/zws/桌面/work_p/git/Athena_Map_Navi/Common/source/speed/nad_speed.cpp
+	"info/nad_speed.h"
+	"nad_type.h"
+	"nad_function.h"
+
+1541758570 /home/zws/桌面/work_p/git/Athena_Map_Navi/Common/include/distributed_runtime/info/nad_speed.h
+	"nad_type.h"
+
+1541758570 source:/home/zws/桌面/work_p/git/Athena_Map_Navi/Common/source/starter/nad_starter.cpp
+	"starter/nad_starter.h"
+	"nad_base.h"
+
+1541758570 /home/zws/桌面/work_p/git/Athena_Map_Navi/Common/include/distributed_runtime/starter/nad_starter.h
+	"config/nad_config.h"
+

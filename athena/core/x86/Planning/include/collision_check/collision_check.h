@@ -359,7 +359,7 @@ public:
     * @return 返回1表示有碰撞，0表示没有。
     */
     int virtual_lane_col_check( path& lane, vector<ObstacleRect> obstacles, double car_speed, double net_speed, int st_pos, double check_length,
-                                double& free_length, double& motion_speed, double& motion_length );
+                                double& free_length, double& motion_speed, double& motion_length, int& drive_mode );
 
     /**
     * @brief 判断某个车道与障碍物是否有碰撞。

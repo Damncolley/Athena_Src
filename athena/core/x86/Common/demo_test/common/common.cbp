@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="common" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../../lib/common" prefix_auto="1" extension_auto="1" />
+				<Option object_output="/home/zws/桌面/work_p/Athena_wangcui_new_02/athena/core/x86/Common/demo_test/common/.objs" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-g" />
+					<Add option="-fPIC" />
+					<Add directory="../../include/base" />
+					<Add directory="../../include/oam" />
+					<Add directory="../../include/route" />
+					<Add directory="../../include/distributed_runtime" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/common" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-std=c++11" />
+					<Add option="-g" />
+					<Add option="-fPIC" />
+					<Add directory="../../include/base" />
+					<Add directory="../../include/oam" />
+					<Add directory="../../include/route" />
+					<Add directory="../../include/distributed_runtime" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="../../include/base/config/Config.h" />
+		<Unit filename="../../include/base/config/nad_config.h" />
+		<Unit filename="../../include/base/config/route_config.h" />
+		<Unit filename="../../include/base/db/nad_db.h" />
+		<Unit filename="../../include/base/log/nad_glog.h" />
+		<Unit filename="../../include/base/nad_base.h" />
+		<Unit filename="../../include/base/nad_enum.h" />
+		<Unit filename="../../include/base/nad_function.h" />
+		<Unit filename="../../include/base/nad_retcode.h" />
+		<Unit filename="../../include/base/nad_type.h" />
+		<Unit filename="../../include/base/xml/pugiconfig.hpp" />
+		<Unit filename="../../include/base/xml/pugixml.hpp" />
+		<Unit filename="../../include/distributed_runtime/info/nad_info.h" />
+		<Unit filename="../../include/distributed_runtime/info/nad_speed.h" />
+		<Unit filename="../../include/distributed_runtime/session/nad_session.h" />
+		<Unit filename="../../include/distributed_runtime/starter/nad_starter.h" />
+		<Unit filename="../../include/distributed_runtime/timer/nad_timer.h" />
+		<Unit filename="../../include/oam/task/nad_task_func.h" />
+		<Unit filename="../../include/oam/task/nad_task_userfunc.h" />
+		<Unit filename="../../include/route/LocalGeographicCS.hpp" />
+		<Unit filename="../../include/route/convert_coordinates.hpp" />
+		<Unit filename="../../include/route/heading.h" />
+		<Unit filename="../../include/route/math_util.h" />
+		<Unit filename="../../source/base/Config.cpp" />
+		<Unit filename="../../source/base/nad_config.cpp" />
+		<Unit filename="../../source/base/nad_db.cpp" />
+		<Unit filename="../../source/base/nad_function.cpp" />
+		<Unit filename="../../source/base/nad_glog.cpp" />
+		<Unit filename="../../source/base/nad_type.cpp" />
+		<Unit filename="../../source/base/pugixml.cpp" />
+		<Unit filename="../../source/msg/nad_session.cpp" />
+		<Unit filename="../../source/msg/nad_timer.cpp" />
+		<Unit filename="../../source/oam/nad_task_func.cpp" />
+		<Unit filename="../../source/oam/nad_task_userfunc.cpp" />
+		<Unit filename="../../source/route/heading.cpp" />
+		<Unit filename="../../source/speed/nad_speed.cpp" />
+		<Unit filename="../../source/starter/nad_starter.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
